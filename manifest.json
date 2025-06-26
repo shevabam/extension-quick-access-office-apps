@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Quick Access Office Apps",
-  "version": "1.0",
+  "version": "1.0.1",
   "description": "Quick access to Office.com applications",
   "action": {
     "default_popup": "pages/popup.html",
