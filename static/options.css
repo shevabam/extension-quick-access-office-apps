@@ -40,9 +40,9 @@ body.quick-access-office-apps__options {
 }
 
 .quick-access-office-apps__options .option {
+  display: flex;
   background: linear-gradient(145deg, #ffffff, #e8e8e8);
   border-radius: 10px;
-  padding: 10px;
   text-align: center;
   transition: transform 0.2s, box-shadow 0.2s;
   background: rgb(172,169,210);
@@ -62,6 +62,7 @@ body.quick-access-office-apps__options {
 .quick-access-office-apps__options .option label {
   flex: 1;
   cursor: pointer;
+  padding: 10px;
 }
 
 .quick-access-office-apps__options .option input[type="checkbox"] {

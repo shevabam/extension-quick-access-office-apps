@@ -16,5 +16,13 @@
   { "name": "Visio", "url": "https://www.office.com/launch/Visio/", "icon": "visio.png" },
   { "name": "Publisher", "url": "https://www.office.com/launch/Publisher/", "icon": "publisher.png" },
   { "name": "Clipchamp", "url": "https://www.office.com/launch/Clipchamp/", "icon": "clipchamp.png" },
-  { "name": "Sway", "url": "https://sway.cloud.microsoft/", "icon": "sway.png" }
+  { "name": "Sway", "url": "https://sway.cloud.microsoft/", "icon": "sway.png" },
+  { "name": "Document Google Docs", "url": "https://docs.new/", "icon": "g-doc.png" },
+  { "name": "Feuille de calcul Google Sheets", "url": "https://sheets.new/", "icon": "g-sheets.png" },
+  { "name": "Formulaire Google Forms", "url": "https://forms.new/", "icon": "g-forms.png" },
+  { "name": "Présentation Google Slides", "url": "https://slides.new/", "icon": "g-slides.png" },
+  { "name": "Site Google Sites", "url": "https://sites.new/", "icon": "g-sites.png" },
+  { "name": "Page Notion", "url": "https://notion.new/", "icon": "notion.png" },
+  { "name": "Design Figma", "url": "https://figma.new/", "icon": "figma.png" },
+  { "name": "Dépôt GitHub", "url": "https://github.com/new", "icon": "github.png" }
 ]

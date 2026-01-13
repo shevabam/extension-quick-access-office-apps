@@ -1,3 +1,7 @@
+function generateIdFromName(name) {
+  return name.normalize('NFD').replace(/[\u0300-\u036f]/g, "").replace(/\s/g, '-').toLowerCase();
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   fetch('../apps.json')
     .then(response => response.json())
@@ -8,18 +12,20 @@ document.addEventListener('DOMContentLoaded', () => {
         const userApps = data.userApps || {};
 
         apps.forEach(app => {
+          const appId = generateIdFromName(app.name);
           const option = document.createElement('div');
           option.className = 'option';
 
           const label = document.createElement('label');
           label.textContent = app.name;
-          label.htmlFor = app.name;
+          label.htmlFor = appId;
 
           label.innerHTML = `<img src="../static/icons/apps/${app.icon}" alt="${app.name}"><span>${app.name}</span>`;
 
+
           const checkbox = document.createElement('input');
           checkbox.type = 'checkbox';
-          checkbox.id = app.name;
+          checkbox.id = appId;
           checkbox.checked = userApps[app.name] !== false;
 
           checkbox.addEventListener('change', () => {
@@ -34,8 +40,8 @@ document.addEventListener('DOMContentLoaded', () => {
               });
           });
 
+          label.appendChild(checkbox);
           option.appendChild(label);
-          option.appendChild(checkbox);
           container.appendChild(option);
         });
       });
