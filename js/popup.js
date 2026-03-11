@@ -1,4 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
+  const isEdge = navigator.userAgent.includes('Edg/');
+  const id = chrome.runtime.id;
+  document.getElementById('review-link').href = isEdge
+    ? `https://microsoftedge.microsoft.com/addons/detail/${id}`
+    : `https://chromewebstore.google.com/detail/${id}/reviews`;
+
   fetch('../apps.json')
     .then(response => response.json())
     .then(apps => {
