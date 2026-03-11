@@ -50,7 +50,7 @@ body.quick-access-office-apps__popup::-webkit-scrollbar-thumb {
 }
 
 body.quick-access-office-apps__popup {
-  width: 380px;
+  width: 400px;
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
@@ -190,6 +190,6 @@ body.quick-access-office-apps__popup {
 }
 
 .quick-access-office-apps__bullet {
-  opacity: 0.4;
-  font-size: 9px;
+  opacity: 0.7;
+  font-size: 11px;
 }
